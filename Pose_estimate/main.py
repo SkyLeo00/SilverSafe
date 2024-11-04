@@ -3,7 +3,6 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import tkinter.messagebox
 from Pose_estimates_server import estimatePose
-import tensorflow as tf
 import pandas as pd
 
 root = tk.Tk()

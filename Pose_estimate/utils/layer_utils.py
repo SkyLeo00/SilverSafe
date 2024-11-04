@@ -4,7 +4,7 @@ from __future__ import division, print_function
 
 import numpy as np
 import tensorflow as tf
-slim = tf.contrib.slim
+import tf_slim as slim
 
 def conv2d(inputs, filters, kernel_size, strides=1):
     def _fixed_padding(inputs, kernel_size):
