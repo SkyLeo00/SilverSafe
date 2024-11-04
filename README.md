@@ -1,2 +1,1 @@
-# SilverSafe
-Jongsul_SilverSafe
+# IoT_Project
