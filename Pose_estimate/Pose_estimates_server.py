@@ -50,8 +50,8 @@ def estimatePose():
     color_table = get_color_table(args.num_class)
 
     # vid = cv2.VideoCapture(args.input_video)
-    vid = cv2.VideoCapture('./data/demo/lunge_03.mp4')
-    # vid = cv2.VideoCapture(r'C:\Users\soma\SMART_Referee\SMART_Referee_DL\data\lunge\video\lunge_03.mp4')
+    vid = cv2.VideoCapture('./data/demo/lunge_02.mp4')
+    # vid = cv2.VideoCapture(r'C:\Users\soma\SMART_Referee\SMART_Referee_DL\data\lunge\video\lunge_02.mp4')
     video_frame_cnt = int(vid.get(7))
     video_width = int(vid.get(3))
     video_height = int(vid.get(4))

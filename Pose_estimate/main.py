@@ -3,7 +3,9 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import tkinter.messagebox
 from Pose_estimates_server import estimatePose
+import tensorflow as tf
 import pandas as pd
+from PIL import Image, ImageTk
 
 root = tk.Tk()
 root.geometry('512x512')
@@ -13,8 +15,14 @@ root.title('YOLOPose')
 frame.config(background='black')
 label = tk.Label(frame, text="YOLOPose", fg="yellow", bg="black",font=('Times 35 bold'))
 label.pack(side='top')
-lunge_image = tk.PhotoImage(file="./data/demo/Lunge.png")
 
+# PIL을 사용하여 이미지 로드
+image = Image.open("./Pose_estimate/data/demo/Lunge.png")
+lunge_image = ImageTk.PhotoImage(image)
+
+# tkinter에서 이미지 사용
+label_image = tk.Label(frame, image=lunge_image)
+label_image.pack(side='top')
 def exitt():
     exit()
 
